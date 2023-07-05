@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/styleCadastro.css">
+    <script src="/js/scriptCadastro.js"></script>
+    <title>CuideBem - Cadastro</title>
+</head>
+<body>
+    <div class="App">
+        <h1>CuideBem</h1>        
+        <form method="post" action="">
+            <label for="IDnome">Nome Completo</label>
+            <input type="text" id="IDnome" name="nome" placeholder="Nome" class="input" required>
+
+            <label for="IDcpf">CPF</label>
+            <input type="text" id="IDcpf" name="cpf" placeholder="000.000.000-00" class="input" required>
+
+            <label for="IDdata">Data de Nascimento</label>
+            <input type="date" id="IDdata" name="data" class="input" required>
+
+            <label for="IDtel">Telefone</label>
+            <input type="tel" id="IDtel" class="input" name="tel" placeholder="(00) 0000-0000" required>
+
+            <label for="IDemail">Email</label>
+            <input type="email" id="IDemail" name="email" placeholder="dev@email.com" class="input" required>
+
+            <label for="IDsenha">Crie uma senha</label>
+            <input type="password" id="IDsenha" name="senha" class="input" placeholder="********" required>
+
+            <div class="bnt"><input type="submit" value="Cadastrar"></div>
+            <p class="voltar"><a href="Login.html">⬅⬅</a></p>     
+        </form>
+    </div>
+</body>
+</html>
