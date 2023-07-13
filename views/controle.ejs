@@ -13,27 +13,29 @@
     <header>
         <h1>Cuide Bem</h1>
         <nav>
-            <button>cadastrar</button>
+            <button><a href="/register">Cadastrar</a></button>
             <input type="text" name="busca" id="IDbusca" placeholder="pesquisa por nome">
+            <button><a id="resultado" href="/pesquisar/">Pesquisar</a></button>
         </nav>
     </header>
     <main>
         <div id="container">
             <% for(var i=0; i<users.length; i++) {%>
-            <div Class="cadastrados">
-                <div class="img"><img src="/img/pessoa.png" alt="pessoa"></div>
+                <div Class="cadastrados">
+                    <div class="img"><img src="/img/pessoa.png" alt="pessoa"></div>
                     <div class="info">
                         <p class="nomeCPF">
                             Nome: <%= users[i].nome %>
-                        </p> 
-                        <p class="nomeCPF">CPF: <%= users[i].cpf %></p> 
-                        <p class="detalhe"><a href="detalhes.html">Detalhar</a></p>
-                                </div>
-                            </div>
-                            <%} %>
-                        </div>
-    </main>
-
-</body>
-
+                        </p>
+                        <p class="nomeCPF">CPF: <%= users[i].cpf %>
+                        </p>
+                        <p class="detalhe"><a href="detalhes/<%= users[i].id %>">Detalhar</a></p>
+                    </div>
+                </div>
+                <%} %>
+            </div>
+        </main>
+        <script src="/js/scriptCadastro.js"></script>
+    </body>
+    
 </html>

@@ -12,26 +12,27 @@
     <div class="App">
         <h1>CuideBem</h1>        
         <form method="post" action="/register">
-            <label for="IDnome">Nome Completo</label>
+            <label for="IDnome">Nome Completo:</label>
             <input type="text" id="IDnome" name="nome" placeholder="Nome" class="input" required>
 
-            <label for="IDcpf">CPF</label>
+            <label for="IDcpf">CPF:</label>
             <input type="text" id="IDcpf" name="cpf" placeholder="000.000.000-00" class="input" required>
 
-            <label for="IDdata">Data de Nascimento</label>
+            <label for="IDdata">Data de Nascimento:</label>
             <input type="date" id="IDdata" name="data" class="input" required>
 
-            <label for="IDtel">Telefone</label>
+            <label for="IDtel">Telefone:</label>
             <input type="tel" id="IDtel" class="input" name="tel" placeholder="(00) 0000-0000" required>
 
-            <label for="IDemail">Email</label>
-            <input type="email" id="IDemail" name="email" placeholder="dev@email.com" class="input" required>
+            <label for="IDsus">SUS:</label>
+            <input type="number" id="IDsus" name="sus" placeholder="000 0000 0000 0000" class="input" required>
 
-            <label for="IDsenha">Crie uma senha</label>
-            <input type="password" id="IDsenha" name="senha" class="input" placeholder="********" required>
+            <label for="IDdesc">Descrição:</label>
+            <textarea name="desc" id="IDdesc" class="input" class="text" placeholder="Insira informações sobre a saúde e cuidados especiais" required></textarea>
+            
 
             <div class="bnt"><input type="submit" value="Cadastrar"></div>
-            <p class="voltar"><a href="Login.html">⬅⬅</a></p>     
+            <p class="voltar"><a href="/users">⬅⬅</a></p>     
         </form>
     </div>
 </body>

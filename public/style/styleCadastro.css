@@ -12,7 +12,7 @@
 }
 
 body {
-  background-color: rgb(211, 211, 211);
+  background-color: rgb(147, 190, 247);
 }
 
 .App{
@@ -20,6 +20,7 @@ body {
     flex-direction: column;
     gap: 1rem;
     background-color: white;
+    box-shadow: 5px 5px 6px rgb(61, 77, 128);
     width: 50rem;
     height: 80rem;
     margin: 0 auto;
@@ -34,7 +35,7 @@ h1{
   font-size: 3rem;
   text-align: center;
   margin: 2rem;
-  color:dodgerblue;
+  color:Dodgerblue;
 }
 
 p{
@@ -67,6 +68,17 @@ input[type=submit]{
   color: white;
   margin: 5rem;
   font-size: 1.7rem;
+}
+
+textarea{
+  background-color: #e4e0e0;
+  padding: 2rem;
+  width: 88%;
+  height: 13rem;
+  border-radius: 1rem;
+  border: none;
+  margin-left: 1rem;
+
 }
 
 .bnt{

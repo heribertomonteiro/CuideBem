@@ -25,8 +25,15 @@ router.get('/users', async (req, res) => {
   }
 })
 
-router.get('/detalhe', async (req, res) => {
-  res.render('detalhes')
+router.get('/detalhes/:id', async (req, res) => {
+  const findUsers = await User.findById(req.params.id)
+  res.render('detalhes', {id: req.params.id, user: findUsers})
+})
+
+router.get('/pesquisar/:nome', async (req, res) => {
+  
+  const findUsers = await User.find({nome: {'$regex' : `${req.params.nome}`, $options: 'i'}})
+  res.render('controle', {users: findUsers})
 })
 
 module.exports = app => app.use('/', router)

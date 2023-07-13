@@ -9,3 +9,11 @@ function cadastrar(){
     console.log(nome, cpf, data, tel, email, senha)
     
 }
+
+let a = document.querySelector("#IDbusca").addEventListener("keyup", pesquisar);
+function pesquisar(){
+    let x = document.getElementById("IDbusca");
+    x.value = x.value.toUpperCase();
+    document.getElementById("resultado").href = `/pesquisar/${x.value}`
+    console.log(x.value)
+}

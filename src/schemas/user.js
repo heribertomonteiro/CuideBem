@@ -6,11 +6,9 @@ const UserSchema = new mongoose.Schema({
     required: true,
   },
   
-  email: {
+  desc: {
     type: String,
     required: true,
-    unique: true,
-    lowercase: true,
   },
 
   data: {
@@ -28,10 +26,9 @@ const UserSchema = new mongoose.Schema({
     required: true,
   },
 
-  senha: {
+  sus: {
     type: String,
     required: true,
-    select: false,
   }
 })
 
