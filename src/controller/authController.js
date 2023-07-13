@@ -3,11 +3,13 @@ const User = require('../schemas/user')
 const router = express.Router()
 
 router.get('/register', (req, res) => {
-  return res.render('register')
+  res.render('register')
 })
 
 router.post('/register', async (req, res) => {
   try {
+    console.log('a')
+    console.log(req.body)
     const users = await User.create(req.body)
     console.log(users)
     return res.send({users})

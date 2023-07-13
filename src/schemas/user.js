@@ -3,34 +3,34 @@ const mongoose = require('../database/index')
 const UserSchema = new mongoose.Schema({
   nome: {
     type: String,
-    require: true,
+    required: true,
   },
   
   email: {
     type: String,
-    require: true,
+    required: true,
     unique: true,
     lowercase: true,
   },
 
   data: {
     type: Date,
-    require: true,
+    required: true,
   },
 
   cpf: {
     type: String,
-    require: true,
+    required: true,
   },
 
   tel: {
     type: String,
-    require: true,
+    required: true,
   },
 
   senha: {
     type: String,
-    require: true,
+    required: true,
     select: false,
   }
 })

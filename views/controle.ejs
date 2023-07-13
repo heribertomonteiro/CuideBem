@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/styleControle.css">
+    <title>Controle</title>
+</head>
+
+<body>
+    <header>
+        <h1>Cuide Bem</h1>
+        <nav>
+            <button>cadastrar</button>
+            <input type="text" name="busca" id="IDbusca" placeholder="pesquisa por nome">
+        </nav>
+    </header>
+    <main>
+        <div id="container">
+            <% for(var i=0; i<findUsers.length; i++) {%>
+            <div Class="cadastrados">
+                <div class="img"><img src="/img/pessoa.png" alt="pessoa"></div>
+                    <div class="info">
+                        <p class="nomeCPF">
+                            Nome: <%= findUsers[i].nome %>
+                        </p> 
+                        <p class="nomeCPF">CPF: 555.555.555-55</p>
+                        <p class="detalhe"><a href="detalhes.html">Detalhar</a></p>
+                                </div>
+                            </div>
+                            <%} %>
+                        </div>
+    </main>
+
+</body>
+
+</html>

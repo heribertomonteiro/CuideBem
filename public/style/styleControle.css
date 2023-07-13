@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+h1{
+    text-align: center;
+    color: dodgerblue;
+    font-size: 4rem;
+    padding: 3rem;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: dodgerblue;
+    padding: 1rem;
+}
+
+button{
+    padding: 0.7rem;
+    border: none;
+    border-radius: 1rem;
+}
+
+input[type='text']{
+    border: none;
+    border-radius: 1rem;
+    padding-left: 1rem;
+}
+
+#container{
+    background-color: rgb(158, 158, 158);
+    height: 70vh;
+    overflow-y: scroll;
+    width: calc(65%);
+    margin: 7rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3.2rem;
+    gap: 2.4rem;
+    
+}
+.cadastrados{
+    height: 15rem;
+    min-width: calc(50% - 1.2rem);
+    background-color: rgb(219, 219, 219);
+    display: flex;
+}
+.cadastrados p{
+    font-size: 1.6rem;
+}
+
+.img img{
+    max-height: 100%;
+}
+
+.img{
+    width: 20%;
+}
+
+.info .nomeCPF{
+    margin-left: 7rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+}
+
+.info .detalhe{
+    text-align: right;
+    margin-top: 1.5rem;
+}
+
