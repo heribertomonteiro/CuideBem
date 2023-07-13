@@ -19,14 +19,14 @@
     </header>
     <main>
         <div id="container">
-            <% for(var i=0; i<findUsers.length; i++) {%>
+            <% for(var i=0; i<users.length; i++) {%>
             <div Class="cadastrados">
                 <div class="img"><img src="/img/pessoa.png" alt="pessoa"></div>
                     <div class="info">
                         <p class="nomeCPF">
-                            Nome: <%= findUsers[i].nome %>
+                            Nome: <%= users[i].nome %>
                         </p> 
-                        <p class="nomeCPF">CPF: 555.555.555-55</p>
+                        <p class="nomeCPF">CPF: <%= users[i].cpf %></p> 
                         <p class="detalhe"><a href="detalhes.html">Detalhar</a></p>
                                 </div>
                             </div>

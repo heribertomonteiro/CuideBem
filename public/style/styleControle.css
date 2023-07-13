@@ -38,7 +38,7 @@ input[type='text']{
     background-color: rgb(158, 158, 158);
     height: 70vh;
     overflow-y: scroll;
-    width: calc(65%);
+    width: calc(70%);
     margin: 7rem auto;
     display: flex;
     flex-wrap: wrap;
