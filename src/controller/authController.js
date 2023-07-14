@@ -36,4 +36,8 @@ router.get('/pesquisar/:nome', async (req, res) => {
   res.render('controle', {users: findUsers})
 })
 
+router.delete('/delete/:id', async (req, res) => {
+  const findUsers = await User.findByIdAndDelete(req.params.id)
+})
+
 module.exports = app => app.use('/', router)

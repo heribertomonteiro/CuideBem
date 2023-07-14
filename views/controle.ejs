@@ -21,7 +21,7 @@
     <main>
         <div id="container">
             <% for(var i=0; i<users.length; i++) {%>
-                <div Class="cadastrados">
+                <div Class="cadastrados" id="">
                     <div class="img"><img src="/img/pessoa.png" alt="pessoa"></div>
                     <div class="info">
                         <p class="nomeCPF">
@@ -30,12 +30,14 @@
                         <p class="nomeCPF">CPF: <%= users[i].cpf %>
                         </p>
                         <p class="detalhe"><a href="detalhes/<%= users[i].id %>">Detalhar</a></p>
+                        <button class="delete" name="<%= users[i].id %>" onclick="deletar(event)">Deletar</button>
                     </div>
                 </div>
                 <%} %>
             </div>
         </main>
         <script src="/js/scriptCadastro.js"></script>
+        <script src="/js/deletar.js"></script>
     </body>
     
 </html>

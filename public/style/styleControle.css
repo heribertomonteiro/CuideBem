@@ -38,7 +38,7 @@ input[type='text']{
     background-color: rgb(158, 158, 158);
     height: 70vh;
     overflow-y: scroll;
-    width: calc(70%);
+    width: 80%;
     margin: 7rem auto;
     display: flex;
     flex-wrap: wrap;
@@ -72,10 +72,26 @@ input[type='text']{
 
 .info .detalhe{
     text-align: right;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
+    margin-right: 8rem;
+}
+
+
+.info{
+    position: relative;
+    width: 80%;
 }
 
 a {
     text-decoration: none;
     color: dodgerblue;
+}
+
+.delete{
+    background-color: dodgerblue;
+    border: none;
+    color: white;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
 }
