@@ -9,9 +9,9 @@ router.get('/register', (req, res) => {
 router.post('/register', async (req, res) => {
   try {
     const users = await User.create(req.body)
-    console.log(users)
-    return res.send({users})
+    res.redirect('/users')
   } catch (error) {
+    console.log(error)
     return res.status(400).send({error: 'Registration failed'})
   }
 })
